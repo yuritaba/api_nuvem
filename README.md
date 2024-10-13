@@ -78,11 +78,11 @@ A aplicação está dockerizada e foi publicada no **Docker Hub**, permitindo f�
 
 - Resposta:
 
-{
-
-  "jwt": "<token_jwt>"
-
-}
+   {
+   
+     "jwt": "<token_jwt>"
+   
+   }
 
 2. **Consulta de dados externos**:
 
