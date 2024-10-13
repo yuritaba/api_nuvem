@@ -8,9 +8,10 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3  # Use the latest version
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -23,7 +24,7 @@ jobs:
 
       - name: Build MkDocs site
         run: |
-          mkdocs build --verbose --clean
+          mkdocs build --clean --verbose
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
