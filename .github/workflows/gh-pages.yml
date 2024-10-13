@@ -3,27 +3,30 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # O deploy será acionado toda vez que você fizer um push na branch main
+      - main  # Or your default branch
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checar o código
-        uses: actions/checkout@v2
+      - name: Checkout the repository
+        uses: actions/checkout@v3  # Use the latest version
 
-      - name: Instalar o Python
-        uses: actions/setup-python@v2
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Instalar dependências MkDocs
+      - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin
+          pip install mkdocs-material mkdocs-mermaid2-plugin
 
-      - name: Publicar no GitHub Pages
+      - name: Build MkDocs site
         run: |
-          mkdocs gh-deploy --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticação
+          mkdocs build --verbose --clean
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
