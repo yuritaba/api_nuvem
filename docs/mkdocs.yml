@@ -1,0 +1,20 @@
+site_name: "API Nuvem - Documentação"
+site_url: "https://yuritaba.github.io/api_nuvem/"
+repo_url: "https://github.com/yuritaba/api_nuvem"
+theme:
+  name: "material"
+  features:
+    - navigation.tabs
+    - navigation.top
+plugins:
+  - search
+  - mermaid2
+nav:
+  - Home: index.md
+  - Introdução: introducao.md
+  - Instalação: instalacao.md
+  - Endpoints:
+      - Registro de Usuário: endpoints/registrar.md
+      - Autenticação de Usuário: endpoints/login.md
+      - Consulta de Dados: endpoints/consultar.md
+  - Diagramas: diagramas.md
