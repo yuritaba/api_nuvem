@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://yuritaba.github.io/api_nuvem/docs/instalacao/">
+        <link rel="canonical" href="https://yuritaba.github.io/api_nuvem/endpoints/login/">
       
       
+        <link rel="prev" href="../registrar/">
+      
+      
+        <link rel="next" href="../consultar/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Instalação - API Nuvem - Documentação</title>
+        <title>Autenticação de Usuário - API Nuvem - Documentação</title>
       
     
     
@@ -60,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalacao" class="md-skip">
+        <a href="#autenticacao-de-usuario" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Instalação
+              Autenticação de Usuário
             
           </span>
         </div>
@@ -175,7 +179,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.md" class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -192,7 +196,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../introducao.md" class="md-tabs__link">
+      <a href="../../introducao/" class="md-tabs__link">
         
   
     
@@ -209,7 +213,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../instalacao.md" class="md-tabs__link">
+      <a href="../../instalacao/" class="md-tabs__link">
         
   
     
@@ -224,11 +228,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../endpoints/registrar.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../registrar/" class="md-tabs__link">
           
   
   Endpoints
@@ -244,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../diagramas.md" class="md-tabs__link">
+      <a href="../../diagramas/" class="md-tabs__link">
         
   
     
@@ -308,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.md" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -328,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../introducao.md" class="md-nav__link">
+      <a href="../../introducao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../instalacao.md" class="md-nav__link">
+      <a href="../../instalacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -365,23 +371,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -392,7 +403,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Endpoints
@@ -406,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../endpoints/registrar.md" class="md-nav__link">
+      <a href="../registrar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,10 +435,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../endpoints/login.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Autenticação de Usuário
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -436,6 +467,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhes-do-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detalhes do Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-da-requisicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura da Requisição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corpo-da-requisicao-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corpo da Requisição (JSON)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-requisicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de Requisição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resposta-de-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resposta de Sucesso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-de-erro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Respostas de Erro
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -448,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../endpoints/consultar.md" class="md-nav__link">
+      <a href="../consultar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -476,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagramas.md" class="md-nav__link">
+      <a href="../../diagramas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,64 +636,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisitos" class="md-nav__link">
+  <a href="#descricao" class="md-nav__link">
     <span class="md-ellipsis">
-      Pré-requisitos
+      Descrição
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passos-para-instalacao" class="md-nav__link">
+  <a href="#detalhes-do-endpoint" class="md-nav__link">
     <span class="md-ellipsis">
-      Passos para Instalação
+      Detalhes do Endpoint
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Passos para Instalação">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-da-requisicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura da Requisição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura da Requisição">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-clonar-o-repositorio" class="md-nav__link">
+  <a href="#corpo-da-requisicao-json" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Clonar o Repositório
+      Corpo da Requisição (JSON)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-criar-o-arquivo-env" class="md-nav__link">
+  <a href="#exemplo-de-requisicao" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Criar o Arquivo .env
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-executar-o-docker-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Executar o Docker Compose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-acessar-a-aplicacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Acessar a Aplicação
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-parar-a-aplicacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Parar a Aplicação
+      Exemplo de Requisição
     </span>
   </a>
   
@@ -581,6 +683,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resposta-de-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resposta de Sucesso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-de-erro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Respostas de Erro
+    </span>
+  </a>
   
 </li>
       
@@ -602,44 +722,49 @@
   
 
 
-<h1 id="instalacao">Instalação</h1>
-<p>Esta seção fornece instruções detalhadas sobre como configurar e executar a aplicação localmente usando o Docker e o Docker Compose.</p>
-<h2 id="pre-requisitos">Pré-requisitos</h2>
+<h1 id="autenticacao-de-usuario">Autenticação de Usuário</h1>
+<h2 id="descricao">Descrição</h2>
+<p>O endpoint de login autentica um usuário existente e retorna um token JWT para acesso aos endpoints protegidos.</p>
+<h2 id="detalhes-do-endpoint">Detalhes do Endpoint</h2>
 <ul>
-<li><strong>Docker</strong> instalado na máquina.</li>
-<li><strong>Docker Compose</strong> instalado na máquina.</li>
-<li><strong>Git</strong> para clonar o repositório.</li>
-<li><strong>Arquivo <code>.env</code></strong> com as variáveis de ambiente necessárias.</li>
+<li><strong>URL</strong>: <code>/login</code></li>
+<li><strong>Método HTTP</strong>: <code>POST</code></li>
+<li><strong>Autenticação</strong>: Não requer autenticação</li>
+<li><strong>Headers</strong>: <code>Content-Type: application/json</code></li>
 </ul>
-<h2 id="passos-para-instalacao">Passos para Instalação</h2>
-<h3 id="1-clonar-o-repositorio">1. Clonar o Repositório</h3>
-<p>Clone o repositório do GitHub para o seu ambiente local:</p>
-<pre><code class="language-bash">git clone https://github.com/yuritabacof/api_nuvem.git
-cd api_nuvem
+<h2 id="estrutura-da-requisicao">Estrutura da Requisição</h2>
+<h3 id="corpo-da-requisicao-json">Corpo da Requisição (JSON)</h3>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;string&quot;,
+  &quot;senha&quot;: &quot;string&quot;
+}
 </code></pre>
-<h3 id="2-criar-o-arquivo-env">2. Criar o Arquivo .env</h3>
-<p>Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:</p>
-<pre><code class="language-bash">DATABASE_URL=postgresql://postgres:cloud@database:5432/db_nuvem
-SECRET_KEY=uma_chave_secreta_segura
+<p>•   <strong>email:</strong> Endereço de e-mail do usuário cadastrado.</p>
+<p>•   <strong>senha:</strong> Senha correspondente à conta do usuário.</p>
+<h3 id="exemplo-de-requisicao">Exemplo de Requisição</h3>
+<pre><code class="language-bash">POST /login HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
 
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=cloud
-POSTGRES_DB=db_nuvem
+{
+  &quot;email&quot;: &quot;yuri@example.com&quot;,
+  &quot;senha&quot;: &quot;cloud123&quot;
+}
 </code></pre>
-<h3 id="3-executar-o-docker-compose">3. Executar o Docker Compose</h3>
-<p>Inicie os containers da aplicação e do banco de dados:</p>
-<pre><code class="language-bash">docker-compose up
+<h2 id="resposta-de-sucesso">Resposta de Sucesso</h2>
+<p>•   <strong>Status Code:</strong> 200 OK</p>
+<p>•   <strong>Corpo da Resposta (JSON):</strong></p>
+<pre><code class="language-json">{
+  &quot;jwt&quot;: &quot;&lt;token_jwt&gt;&quot;
+}
 </code></pre>
-<p>Este comando irá:</p>
-<p>•   Construir as imagens Docker necessárias.</p>
-<p>•   Iniciar os containers definidos no docker-compose.yaml.</p>
-<p>•   Configurar a rede interna para comunicação entre os containers.</p>
-<h3 id="4-acessar-a-aplicacao">4. Acessar a Aplicação</h3>
-<p>Após os containers estarem em execução, acesse a documentação interativa da API no seu navegador:</p>
-<p>•   <strong>Swagger UI:</strong> http://localhost:8000/docs</p>
-<h3 id="5-parar-a-aplicacao">5. Parar a Aplicação</h3>
-<p>Para parar os containers em execução, pressione Ctrl+C no terminal onde o Docker Compose está rodando ou execute:</p>
-<pre><code class="language-bash">docker-compose down
+<p>•   <strong>jwt:</strong> Token JWT para autenticação em endpoints protegidos.</p>
+<h2 id="respostas-de-erro">Respostas de Erro</h2>
+<p>•   <strong>401 Unauthorized:</strong> Credenciais inválidas.</p>
+<p>Exemplo de Resposta de Erro</p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;E-mail ou senha incorretos.&quot;
+}
 </code></pre>
 
 
