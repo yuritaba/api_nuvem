@@ -3,7 +3,7 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ou a branch que você está utilizando para desenvolver
+      - main  # O deploy será acionado toda vez que você fizer um push na branch main
 
 jobs:
   deploy:
@@ -25,3 +25,5 @@ jobs:
       - name: Publicar no GitHub Pages
         run: |
           mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticação
