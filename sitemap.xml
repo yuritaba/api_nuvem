@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/diagramas/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/instalacao/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/introducao/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/endpoints/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/endpoints/consultar/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/endpoints/login/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+    <url>
+         <loc>https://yuritaba.github.io/api_nuvem/docs/endpoints/registrar/</loc>
+         <lastmod>2024-10-13</lastmod>
+    </url>
+</urlset>
