@@ -19,15 +19,15 @@ A aplicação está dockerizada e foi publicada no **Docker Hub**, permitindo f�
 
 2. **Crie o arquivo .env com as seguintes variáveis de ambiente**:
    
-DATABASE_URL= url para o seu db postgres, exemplo: postgresql://postgres:cloud@database:5432/db_nuvem
-
-SECRET_KEY= uma_chave_secreta_aleatoria, exemplo: bea8aeaa507d4571165a852131f3d5fd95767633bc419df13c7f9bb060a07294
-
-POSTGRES_USER= seu usuario postgres aqui
-
-POSTGRES_PASSWORD= sua senha postgres aqui
-
-POSTGRES_DB= nome do seu db postgres aqui
+   DATABASE_URL= url para o seu db postgres, exemplo: postgresql://postgres:cloud@database:5432/db_nuvem
+   
+   SECRET_KEY= uma_chave_secreta_aleatoria, exemplo: bea8aeaa507d4571165a852131f3d5fd95767633bc419df13c7f9bb060a07294
+   
+   POSTGRES_USER= seu usuario postgres aqui
+   
+   POSTGRES_PASSWORD= sua senha postgres aqui
+   
+   POSTGRES_DB= nome do seu db postgres aqui
 
 3. **Execute o Docker Compose para iniciar os containers da aplicação e do banco de dados**
 
@@ -42,22 +42,24 @@ POSTGRES_DB= nome do seu db postgres aqui
 - Descrição: Cria um novo usuário e retorna um token JWT.
 - Exemplo de Requisição:
 
-{
-  "nome": "João da Silva",
-  
-  "email": "joaozinho@example.com",
-  
-  "senha": "cloud123"
-  
-}
+   {
+   
+     "nome": "João da Silva",
+     
+     "email": "joaozinho@example.com",
+     
+     "senha": "cloud123"
+     
+   }
 
 - Resposta:
 
 
-{
-  "jwt": "<token_jwt>"
-  
-}
+   {
+   
+     "jwt": "<token_jwt>"
+     
+   }
 
 2. **Autenticação de Usuário**:
 
@@ -66,13 +68,13 @@ POSTGRES_DB= nome do seu db postgres aqui
 - Descrição: Autentica um usuário existente e retorna um token JWT.
 - Exemplo de Requisição:
   
-{
-
-  "email": "joaozinho@example.com",
-  
-  "senha": "cloud123"
-
-}
+   {
+   
+     "email": "joaozinho@example.com",
+     
+     "senha": "cloud123"
+   
+   }
 
 - Resposta:
 
@@ -93,62 +95,62 @@ Header: Authorization: Bearer <JWT>
 
 - Resposta:
 
-{
-
-  "time": [
-  
-    "2024-10-13",
+   {
+   
+     "time": [
+     
+       "2024-10-13",
+       
+       "2024-10-14",
+       
+       "2024-10-15",
+       
+       "2024-10-16",
+       
+       "2024-10-17",
+       
+       "2024-10-18",
+       
+       "2024-10-19"
+   
+     ],
+     
+     "temperature_2m_max": [
+     
+       26.3,
+       
+       25.4,
+       
+       27.6,
+       
+       28.9,
+       
+       29.4,
+       
+       30.8,
+       
+       21
     
-    "2024-10-14",
-    
-    "2024-10-15",
-    
-    "2024-10-16",
-    
-    "2024-10-17",
-    
-    "2024-10-18",
-    
-    "2024-10-19"
-
-  ],
-  
-  "temperature_2m_max": [
-  
-    26.3,
-    
-    25.4,
-    
-    27.6,
-    
-    28.9,
-    
-    29.4,
-    
-    30.8,
-    
-    21
- 
-  ],
-  
-  "temperature_2m_min": [
-  
-    15.9,
-    
-    16.1,
-    
-    15.7,
-    
-    15.9,
-    
-    18,
-    
-    18.1,
-    
-    19.3
-  
-  ]
-
-}
+     ],
+     
+     "temperature_2m_min": [
+     
+       15.9,
+       
+       16.1,
+       
+       15.7,
+       
+       15.9,
+       
+       18,
+       
+       18.1,
+       
+       19.3
+     
+     ]
+   
+   }
 
 link para o docker hub do projeto: https://hub.docker.com/r/yuritabacof/api_nuvem
