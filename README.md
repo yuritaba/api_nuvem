@@ -1,4 +1,7 @@
 # Yuri Tabacof - API nuvem
+
+[![Documentation](https://img.shields.io/badge/docs-API_Nuvem-blue)](https://yuritaba.github.io/api_nuvem/)
+
 ## API RESTful com FastAPI, PostgreSQL e Docker
 
 ### 1. Explicação do Projeto
