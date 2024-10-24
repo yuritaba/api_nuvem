@@ -2,6 +2,10 @@
 
 [![Documentation](https://img.shields.io/badge/docs-API_Nuvem-blue)](https://yuritaba.github.io/api_nuvem/)
 
+## Vídeo testando endpoints:
+
+https://youtu.be/j4WROR6RjzE
+
 ## API RESTful com FastAPI, PostgreSQL e Docker
 
 ### 1. Explicação do Projeto
@@ -40,6 +44,8 @@ A aplicação está dockerizada e foi publicada no **Docker Hub**, permitindo f�
 
 1. **Registro de Usuário**:
 
+![Registro de usuário](docs/img/img5.png)
+
 - Método: POST
 - Endpoint: /registrar
 - Descrição: Cria um novo usuário e retorna um token JWT.
@@ -66,6 +72,8 @@ A aplicação está dockerizada e foi publicada no **Docker Hub**, permitindo f�
 
 2. **Autenticação de Usuário**:
 
+![Registro de usuário](docs/img/img6.png)
+
 - Método: POST
 - Endpoint: /login
 - Descrição: Autentica um usuário existente e retorna um token JWT.
@@ -87,7 +95,13 @@ A aplicação está dockerizada e foi publicada no **Docker Hub**, permitindo f�
    
    }
 
+Ou caso o usuário não exista ou a senha esteja errada:
+
+![Registro de usuário](docs/img/img7.png)
+
 2. **Consulta de dados externos**:
+
+![Registro de usuário](docs/img/img10.png)
 
 - Método: GET
 - Endpoint: /consultar
