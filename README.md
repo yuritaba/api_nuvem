@@ -1,6 +1,14 @@
 # Yuri Tabacof - API nuvem
 
+## Documentação:
+
 [![Documentation](https://img.shields.io/badge/docs-API_Nuvem-blue)](https://yuritaba.github.io/api_nuvem/)
+
+## Vídeo testando aplicação na AWS:
+
+https://youtu.be/RXYjZFNvEl8
+
+(Os arquivos deployment.yaml, service.yaml, database-deployment.yaml, database-service.yaml estão na pasta k8s!!!)
 
 ## Vídeo testando endpoints:
 
