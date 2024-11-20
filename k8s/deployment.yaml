@@ -1,0 +1,25 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-nuvem-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-nuvem
+  template:
+    metadata:
+      labels:
+        app: api-nuvem
+    spec:
+      containers:
+      - name: api-nuvem
+        image: 879381284949.dkr.ecr.us-east-1.amazonaws.com/api_nuvem:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://projeto:projeto@postgres-service:5432/projeto"
+        - name: SECRET_KEY
+          value: "projeto"
