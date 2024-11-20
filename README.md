@@ -10,6 +10,10 @@ https://youtu.be/RXYjZFNvEl8
 
 (Os arquivos deployment.yaml, service.yaml, database-deployment.yaml, database-service.yaml estão na pasta k8s!!!)
 
+## Link para Swagger UI da aplicação na AWS:
+
+http://a54a98168419a426da57414bf9a9f2a3-1676338195.us-east-1.elb.amazonaws.com/docs#
+
 ## Vídeo testando endpoints:
 
 https://youtu.be/j4WROR6RjzE
